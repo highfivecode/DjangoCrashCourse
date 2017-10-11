@@ -1,3 +1,38 @@
-h1 {
-  color: blue;
+body {
+  margin: 0;
+}
+
+nav {
+  background: #d0f1b0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+nav a{
+  color: black;
+  text-decoration: none;
+  font-size: 1.25em;
+  padding: 5px;
+}
+
+.homepage-content{
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.homepage-banner{
+  text-align: center;
+  color: #648e2c;
+  font-size: 2em;
+  max-width: 100%;
+}
+
+.button{
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
 }
