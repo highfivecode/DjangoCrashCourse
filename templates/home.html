@@ -6,7 +6,15 @@
   <body>
     <div id="container">
       <h1>Welcome to {{ our_greeting | title }}!</h1>
-      <h4>{{ day_of_week }}</h4>
+      {% if weekday_list %}
+        <ul>
+          {% for day in weekday_list %}
+            <li>{{ day|slice:":3" }}</li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p>Days of week is not defined.</p>
+      {% endif %}
     </div>
   </body>
 </html>
