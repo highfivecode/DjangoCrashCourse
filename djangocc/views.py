@@ -1,4 +1,8 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 def home(request):
-    return HttpResponse('Welcome there to our first django app! Powered by Python and the Django Crash Course.')
+    '''
+    Renders home page
+    '''
+    context = {} #an empty dictionary
+    return render(request, 'home.html', context)
