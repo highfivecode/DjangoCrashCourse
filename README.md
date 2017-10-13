@@ -8,3 +8,4 @@ A crash course in Django
 ### [DCC 7 - Managing Static Files](https://github.com/highfivecode/DjangoCrashCourse/tree/c8a66fcd1f72a0c8a27c98b19ee601718756c2ac)  
 ### [DCC 8 - Styling The Homepage](https://github.com/highfivecode/DjangoCrashCourse/tree/abcd3f056182ca5db62360fdcd7cb6c4b99258f8)  
 ### [DCC 9 - First App](https://github.com/highfivecode/DjangoCrashCourse/tree/e8902d3c7d0144e44854f291b4bbe8629703c81e)  
+### [DCC 10 - First Model](https://github.com/highfivecode/DjangoCrashCourse/tree/98ec82ad376089227ef012f9a6efb926cca0bc78)  
