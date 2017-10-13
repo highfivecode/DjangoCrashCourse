@@ -9,4 +9,5 @@ A crash course in Django
 ### [DCC 8 - Styling The Homepage](https://github.com/highfivecode/DjangoCrashCourse/tree/abcd3f056182ca5db62360fdcd7cb6c4b99258f8)  
 ### [DCC 9 - First App](https://github.com/highfivecode/DjangoCrashCourse/tree/e8902d3c7d0144e44854f291b4bbe8629703c81e)  
 ### [DCC 10 - First Model](https://github.com/highfivecode/DjangoCrashCourse/tree/98ec82ad376089227ef012f9a6efb926cca0bc78)  
-### [DCC 11 - QuerySets And Managers](https://github.com/highfivecode/DjangoCrashCourse/tree/492f56adbaeebd78a2063f6199588110b6618632)
+### [DCC 11 - QuerySets And Managers](https://github.com/highfivecode/DjangoCrashCourse/tree/492f56adbaeebd78a2063f6199588110b6618632)  
+### [DCC 12 - Using QuerySets In Templates](https://github.com/highfivecode/DjangoCrashCourse/tree/6757155c9fd63488f18378c3eed56b4a94b73676)  
