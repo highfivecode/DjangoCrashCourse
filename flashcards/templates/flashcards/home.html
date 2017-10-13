@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>uStudy</title>
+    <link rel='stylesheet' href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+      <nav>
+        <a href="">uStudy</a> |
+        <a href="">Decks</a> |
+        <a href="">About</a> |
+        <a href="">Contact</a>
+      </nav>
+
+      {% if decks %}
+        <ul>
+          {% for deck in decks %}
+            <li>{{deck.title}}</li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <h1>No Decks Found! Contact an Admin!</h1>
+      {% endif %}
+
+  </body>
+</html>

@@ -1,6 +1,11 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import Deck
 
 # Create your views here.
 def home(request):
-    return HttpResponse('Welcome to the flashcards app')
+    '''
+    Renders the FLASHCARD app home template
+    '''
+    qs = Deck.objects.order_by('-title')
+    context = {'decks': qs}
+    return render(request, 'flashcards/home.html', context)
