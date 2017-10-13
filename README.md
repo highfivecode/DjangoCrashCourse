@@ -6,4 +6,5 @@ A crash course in Django
 ### [DCC 5 - Templating Language - Variables and Filters](https://github.com/highfivecode/DjangoCrashCourse/tree/e659720eafa19df8e6b39e680d055b6260991b99)  
 ### [DCC 6 - Templating Language - Template Tags](https://github.com/highfivecode/DjangoCrashCourse/tree/377aa3ed9c18ef5279e9d143a73378b38b00a14f)  
 ### [DCC 7 - Managing Static Files](https://github.com/highfivecode/DjangoCrashCourse/tree/c8a66fcd1f72a0c8a27c98b19ee601718756c2ac)  
-### [DCC 8 - Styling The Homepage](https://github.com/highfivecode/DjangoCrashCourse/tree/abcd3f056182ca5db62360fdcd7cb6c4b99258f8)
+### [DCC 8 - Styling The Homepage](https://github.com/highfivecode/DjangoCrashCourse/tree/abcd3f056182ca5db62360fdcd7cb6c4b99258f8)  
+### [DCC 9 - First App](https://github.com/highfivecode/DjangoCrashCourse/tree/e8902d3c7d0144e44854f291b4bbe8629703c81e)  
