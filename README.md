@@ -11,3 +11,4 @@ A crash course in Django
 ### [DCC 10 - First Model](https://github.com/highfivecode/DjangoCrashCourse/tree/98ec82ad376089227ef012f9a6efb926cca0bc78)  
 ### [DCC 11 - QuerySets And Managers](https://github.com/highfivecode/DjangoCrashCourse/tree/492f56adbaeebd78a2063f6199588110b6618632)  
 ### [DCC 12 - Using QuerySets In Templates](https://github.com/highfivecode/DjangoCrashCourse/tree/6757155c9fd63488f18378c3eed56b4a94b73676)  
+### [DCC 13 - Template Inheritance and URLs](https://github.com/highfivecode/DjangoCrashCourse/tree/e1cea9be521dcf55f387f2dc5fd131baaf85f469)  
