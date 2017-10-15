@@ -7,3 +7,11 @@ class Deck(models.Model):
 
     def __str__(self):
         return self.title
+
+class Card(models.Model):
+    parentDeck = models.ForeignKey(Deck, on_delete=models.CASCADE)
+    front = models.TextField()
+    back = models.TextField()
+
+    def __str__(self):
+        return self.front
