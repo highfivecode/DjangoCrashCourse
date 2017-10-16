@@ -13,3 +13,4 @@ A crash course in Django
 ### [DCC 12 - Using QuerySets In Templates](https://github.com/highfivecode/DjangoCrashCourse/tree/6757155c9fd63488f18378c3eed56b4a94b73676)  
 ### [DCC 13 - Template Inheritance and URLs](https://github.com/highfivecode/DjangoCrashCourse/tree/e1cea9be521dcf55f387f2dc5fd131baaf85f469)  
 ### [DCC 14 - Models And Foreign Key Relationships](https://github.com/highfivecode/DjangoCrashCourse/tree/d5a821d98493e0bbc0cfdbc0bcc72f8a4cecdcbc)  
+### [DCC 15 - The Admin Panel](https://github.com/highfivecode/DjangoCrashCourse/tree/06016debcc36e6a7650054a7f51b929df71dd7ae)  
