@@ -11,6 +11,9 @@
         <a href="{% url 'flashcards:home' %}">Decks</a> |
         <a href="">About</a> |
         <a href="">Contact</a>
+        {% if request.user.is_superuser %}
+          | <a href="{% url 'admin:index' %}">Admin Panel</a>
+        {% endif %}
       </nav>
 
       {% block content %}
