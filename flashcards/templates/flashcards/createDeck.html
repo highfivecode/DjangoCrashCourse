@@ -3,7 +3,9 @@
 {% block content %}
 <form method="POST">
   {% csrf_token %}
-<input type='text' name="input1">
+Title: <input type='text' name="form_title"><br>
+Description: <input type='text' name='form_description'><br>
+Is Active? <input type='checkbox' name='form_is_active'><br>
 <input type="submit" value="Submit Form">
 </form>
 {% endblock %}
