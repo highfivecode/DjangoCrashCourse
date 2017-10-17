@@ -15,3 +15,4 @@ A crash course in Django
 ### [DCC 14 - Models And Foreign Key Relationships](https://github.com/highfivecode/DjangoCrashCourse/tree/d5a821d98493e0bbc0cfdbc0bcc72f8a4cecdcbc)  
 ### [DCC 15 - The Admin Panel](https://github.com/highfivecode/DjangoCrashCourse/tree/06016debcc36e6a7650054a7f51b929df71dd7ae)  
 ### [DCC 16 - Admin Panel Options](https://github.com/highfivecode/DjangoCrashCourse/tree/be0a817ad92ffb582bec8fe6979ea92197a0353d)  
+### [DCC 17 - Admin Panel Actions](https://github.com/highfivecode/DjangoCrashCourse/tree/6fb367f27ab4acb5cf472d5d4edeaa3f6a24c8df)  
