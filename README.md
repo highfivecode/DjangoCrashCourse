@@ -16,3 +16,4 @@ A crash course in Django
 ### [DCC 15 - The Admin Panel](https://github.com/highfivecode/DjangoCrashCourse/tree/06016debcc36e6a7650054a7f51b929df71dd7ae)  
 ### [DCC 16 - Admin Panel Options](https://github.com/highfivecode/DjangoCrashCourse/tree/be0a817ad92ffb582bec8fe6979ea92197a0353d)  
 ### [DCC 17 - Admin Panel Actions](https://github.com/highfivecode/DjangoCrashCourse/tree/6fb367f27ab4acb5cf472d5d4edeaa3f6a24c8df)  
+### [DCC 18 - Forms Part 1](https://github.com/highfivecode/DjangoCrashCourse/tree/973d3bebf151effe803cd773fe1a5ef8c9356d10)  
