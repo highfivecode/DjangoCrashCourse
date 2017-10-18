@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .forms import DeckForm
 from .models import Deck
 
 # Create your views here.
@@ -15,17 +16,13 @@ def createDeck(request):
     Renders the form to add new decks to the database
     '''
     if request.method == 'POST':
-        title_input = request.POST.get('form_title', None)
-        description_input = request.POST.get('form_description', None)
-        if 'form_is_active' in request.POST:
-            is_active_input = True
-        else:
-            is_active_input = False
-        new_deck = Deck(
-                        title = title_input,
-                        description = description_input,
-                        is_active = is_active_input)
-        new_deck.save()
-        print('************* NEW DECK SAVED ****************')
-    context = {}
+        # create the form isntance, and populate with data from the request
+        form = DeckForm(request.POST)
+        # check if the form is valid
+        if form.is_valid():
+            #save the form, this saves the object to the database
+            form.save()
+    else:
+        form = DeckForm()
+    context = {'form': form}
     return render(request, 'flashcards/createDeck.html', context)
