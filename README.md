@@ -19,3 +19,4 @@ A crash course in Django
 ### [DCC 18 - Forms Part 1](https://github.com/highfivecode/DjangoCrashCourse/tree/973d3bebf151effe803cd773fe1a5ef8c9356d10)  
 ### [DCC 19 - Forms Part 2](https://github.com/highfivecode/DjangoCrashCourse/tree/316bac7f7a615e04dab3746ef9d6b13272d22479)  
 ### [DCC 20 - Model Forms Part 1](https://github.com/highfivecode/DjangoCrashCourse/tree/5e2319df32b334d08576fe2dca6b1ee3aa8511e7)  
+### [DCC 21 - Model Forms Part 2](https://github.com/highfivecode/DjangoCrashCourse/tree/6a54854c12c670d350f6fdd5b3f7de210f141893)  
