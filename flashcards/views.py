@@ -1,4 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import (
+        HttpResponseRedirect,
+        render,
+    )
 from .forms import DeckForm
 from .models import Deck
 
@@ -22,6 +25,7 @@ def createDeck(request):
         if form.is_valid():
             #save the form, this saves the object to the database
             form.save()
+            return HttpResponseRedirect('/flashcards')
     else:
         form = DeckForm()
     context = {'form': form}
