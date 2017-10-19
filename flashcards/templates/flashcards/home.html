@@ -3,7 +3,7 @@
       {% if decks %}
         <ul>
           {% for deck in decks %}
-            <li>{{deck.title}}</li>
+            <li>{{deck.title}} - <a href="{% url 'flashcards:editDeck' deck.id %}"> Edit </a></li>
           {% endfor %}
         </ul>
       {% else %}
