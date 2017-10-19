@@ -21,3 +21,4 @@ A crash course in Django
 ### [DCC 20 - Model Forms Part 1](https://github.com/highfivecode/DjangoCrashCourse/tree/5e2319df32b334d08576fe2dca6b1ee3aa8511e7)  
 ### [DCC 21 - Model Forms Part 2](https://github.com/highfivecode/DjangoCrashCourse/tree/6a54854c12c670d350f6fdd5b3f7de210f141893)  
 ### [DCC 22 - Dynamic Url Parameters and Editing Model Forms](https://github.com/highfivecode/DjangoCrashCourse/tree/3cd043c25753793af2ed046f27dd42d0582f49a4)  
+### [DCC 23 - Deleting Objects Using A View](https://github.com/highfivecode/DjangoCrashCourse/tree/5d74691b302ddb49df61eb46b189866863ed2e40)  
