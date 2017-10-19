@@ -30,7 +30,7 @@ def createDeck(request):
     else:
         form = DeckForm()
     context = {'form': form}
-    return render(request, 'flashcards/createDeck.html', context)
+    return render(request, 'flashcards/createAndEditDeck.html', context)
 
 def editDeck(request, deck_id):
     '''
@@ -47,5 +47,13 @@ def editDeck(request, deck_id):
             return HttpResponseRedirect('/flashcards')
     else:
         form = DeckForm(instance=deck_obj)
-    context = {'form': form}
-    return render(request, 'flashcards/createDeck.html', context)
+    context = {'form': form, 'edit_mode':True, 'deck_obj':deck_obj}
+    return render(request, 'flashcards/createAndEditDeck.html', context)
+
+def deleteDeck(request, deck_id):
+    '''
+    Deletes the deck whose id == deck_id
+    '''
+    deck_obj = get_object_or_404(Deck, id=deck_id)
+    deck_obj.delete()
+    return HttpResponseRedirect('/flashcards')
