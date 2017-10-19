@@ -1,12 +1,17 @@
 {% extends 'base.html' %}
 {% block content %}
+  <div class='homepage-banner'>
+    <h1>uStudy</h1>
+    <hr>
+    <h4>Please select a deck below!</h4>
+    <a class='blue-background my-button' href="{% url 'flashcards:createDeck' %}">Create New Deck</a>
+
       {% if decks %}
-        <ul>
           {% for deck in decks %}
-            <li>{{deck.title}} - <a href="{% url 'flashcards:editDeck' deck.id %}"> Edit </a></li>
+            <a class='my-button' href="{% url 'flashcards:editDeck' deck.id %}">{{deck.title}}</a>
           {% endfor %}
-        </ul>
       {% else %}
         <h1>No Decks Found! Contact an Admin!</h1>
       {% endif %}
+  </div>
 {% endblock %}

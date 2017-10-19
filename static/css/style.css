@@ -15,9 +15,9 @@ nav a{
   padding: 5px;
 }
 
-.homepage-content{
+.container{
   width: 80%;
-  max-width: 400px;
+  min-width: 400px;
   margin: 0 auto;
 }
 
@@ -28,11 +28,23 @@ nav a{
   max-width: 100%;
 }
 
-.button{
+.homepage-banner hr{
+  width: 20%;
+}
+
+.my-button{
+  display: block;
+  width: 200px;
+  margin: 10px auto;
   background-color: #4CAF50;
   border: none;
   border-radius: 10px;
   color: white;
   text-align: center;
   text-decoration: none;
+
+}
+
+.blue-background {
+  background: blue;
 }

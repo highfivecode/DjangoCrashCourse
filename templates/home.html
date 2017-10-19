@@ -1,12 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-      <div class='homepage-content'>
         <div class='homepage-banner'>
           <h1>uStudy</h1>
           <hr>
           <h4>Harness the Power of U!</h4>
-          <a class='button' href="">Get Started</a>
+          <a class='my-button' href="{% url 'flashcards:home' %}">Get Started</a>
         </div>
-      </div>
 {% endblock %}
