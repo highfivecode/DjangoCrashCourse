@@ -1,7 +1,17 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>{{deck_obj}}</h1>
+<div class="deck-header">
+  <div class="deck-header-title">
+    <h1>{{deck_obj}}</h1>
+  </div>
+  <div class="deck-header-actions">
+    <a href="{% url 'flashcards:editDeck' deck_obj.id %}">edit deck</a><br>
+    add card<br>
+  </div>
+</div>
+
+
 <hr>
 {% if card_obj %}
   <p>{{card_obj.front}}</p>

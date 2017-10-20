@@ -48,3 +48,26 @@ nav a{
 .blue-background {
   background: blue;
 }
+
+.deck-header{
+  margin-top: 20px;
+  display: block;
+  overflow: auto;
+}
+
+.deck-header-title{
+  float: left;
+  width: 50%;
+  color: green;
+}
+
+.deck-header-title h1{
+  margin: 0;
+}
+
+.deck-header-actions{
+  float: right;
+  width: 50%;
+  color: red;
+  text-align: right;
+}
