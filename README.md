@@ -29,4 +29,5 @@ A crash course in Django
 ### [DCC 28 - Editing Cards](https://github.com/highfivecode/DjangoCrashCourse/tree/4a100b729682c07bcfbc99b979d6a6de5b2f67d8)  
 ### [DCC 29 - Deleting Cards](https://github.com/highfivecode/DjangoCrashCourse/tree/193ea3afd19a262115f6c29fbc5093b78600a159)  
 ### [DCC 30 - Reversing Urls In Views](https://github.com/highfivecode/DjangoCrashCourse/tree/6dce3799d2fd21255e4cdb49fceff68cf7651ded)   
-### [DCC 31 - Automated Test Part 1](https://github.com/highfivecode/DjangoCrashCourse/tree/af2f3117a5c7d4e492a1096481bcb5fc8533b28d)  
+### [DCC 31 - Automated Testing Part 1](https://github.com/highfivecode/DjangoCrashCourse/tree/af2f3117a5c7d4e492a1096481bcb5fc8533b28d)    
+### [DCC 32 - Automated Testing Part 2](https://github.com/highfivecode/DjangoCrashCourse/tree/9ce40dadd4aaa50ac8fc878dd660347f596410da)  
