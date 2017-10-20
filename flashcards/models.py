@@ -35,6 +35,12 @@ class Card(models.Model):
             return False
         return True
 
+    def get_prev_card(self):
+        '''
+        Returns previous card in deck
+        '''
+        return self.parentDeck.card_set.filter(id__lt=self.id).last()
+
 
     def has_next_card(self):
         '''

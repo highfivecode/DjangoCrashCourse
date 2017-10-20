@@ -48,6 +48,15 @@ class CardTestCase(TestCase):
         self.assertTrue(self.card2.has_prev_card())
         self.assertTrue(self.card3.has_prev_card())
 
+    def test_get_prev_card(self):
+        '''
+        The first card should return None.
+        All others should return the prev card in the deck.
+        '''
+        self.assertIsNone(self.card1.get_prev_card())
+        self.assertEqual(self.card1, self.card2.get_prev_card())
+        self.assertEqual(self.card2, self.card3.get_prev_card())
+
     def test_card_has_next(self):
         '''
         The last card does not have a next card.
