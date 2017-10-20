@@ -9,16 +9,30 @@
     <a href="{% url 'flashcards:editDeck' deck_obj.id %}">edit deck</a><br>
     <a href="{% url 'flashcards:createCard' deck_obj.id %}">add card</a><br>
     {% if card_obj %}
-      <a href="{% url 'flashcards:editCard' card_obj.id %}">edit current card</a><br> 
+      <a href="{% url 'flashcards:editCard' card_obj.id %}">edit current card</a><br>
     {% endif %}
   </div>
 </div>
-
-
 <hr>
+
 {% if card_obj %}
-  <p>{{card_obj.front}}</p>
-  <p>{{card_obj.back}}</p>
+
+<div class="notecard">
+  <div class="notecard-nav text-centered">
+    <a href="">Prev</a>
+    <a href="">Random</a>
+    <a href="">Next</a>
+  </div>
+  <div class="notecard-front">
+    <p class='text-centered'>Front</p>
+    <p>{{card_obj.front}}</p>
+  </div>
+  <div class="notecard-back">
+    <p class='text-centered'>Back</p>
+    <p>{{card_obj.back}}</p>
+  </div>
+</div>
+
 {% else %}
   <p>No card found. Have you tried to add one?</p>
 {% endif %}

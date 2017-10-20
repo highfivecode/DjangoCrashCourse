@@ -71,3 +71,25 @@ nav a{
   color: red;
   text-align: right;
 }
+
+.notecard {
+  width: 80%;
+  max-width: 500px;
+  height: 288px;
+  background: url('../images/notecard.jpg');
+  background-size: 100% 100%;
+  margin: auto;
+  padding: 20px;
+}
+
+.notecard-back {
+  display: none;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.notecard-nav a{
+  margin: 0 10px;
+}
