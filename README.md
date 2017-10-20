@@ -24,3 +24,4 @@ A crash course in Django
 ### [DCC 23 - Deleting Objects Using A View](https://github.com/highfivecode/DjangoCrashCourse/tree/5d74691b302ddb49df61eb46b189866863ed2e40)  
 ### [DCC 24 - CSS Housekeeping](https://github.com/highfivecode/DjangoCrashCourse/tree/c04494667b4fb9b90b3cba3a3cc1a4ece294f962)  
 ### [DCC 25 - Viewing The Flashcards](https://github.com/highfivecode/DjangoCrashCourse/tree/0836fe982840662341e41319f96cd4ee34f574e1)  
+### [DCC 26 - Styling The View Deck Page](https://github.com/highfivecode/DjangoCrashCourse/tree/fc2badf25de67ac9c880c7f864fc5dc3ddfda337)  
