@@ -65,3 +65,12 @@ class CardTestCase(TestCase):
         self.assertTrue(self.card1.has_next_card())
         self.assertTrue(self.card2.has_next_card())
         self.assertFalse(self.card3.has_next_card())
+
+    def test_get_next_card(self):
+        '''
+        The last card should return None.
+        All others should return the next card in the deck.
+        '''
+        self.assertIsNone(self.card3.get_next_card())
+        self.assertEqual(self.card3, self.card2.get_next_card())
+        self.assertEqual(self.card2, self.card1.get_next_card())

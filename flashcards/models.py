@@ -51,3 +51,9 @@ class Card(models.Model):
         if self == last_card_in_deck:
             return False
         return True
+
+    def get_next_card(self):
+        '''
+        Returns next card in deck
+        '''
+        return self.parentDeck.card_set.filter(id__gt=self.id).first()
