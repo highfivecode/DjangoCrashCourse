@@ -4,7 +4,7 @@ from django.shortcuts import (
         render,
     )
 from .forms import CardForm, DeckForm
-from .models import Deck
+from .models import Card, Deck
 
 # Create your views here.
 def home(request):
@@ -54,6 +54,22 @@ def deleteDeck(request, deck_id):
     deck_obj = get_object_or_404(Deck, id=deck_id)
     deck_obj.delete()
     return HttpResponseRedirect('/flashcards')
+
+def editCard(request, deck_id, card_id):
+    '''
+    Renders the form to edit information about a card
+    '''
+    deck_obj = get_object_or_404(Deck, id=deck_id)
+    card_obj = get_object_or_404(Card, id=card_id)
+    if request.method == 'POST':
+        form = CardForm(request.POST, instance=card_obj)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect('/flashcards')
+    else:
+        form = CardForm(instance=card_obj)
+    context = {'form':form, 'edit_mode':True, 'card_obj':card_obj}
+    return render(request, 'flashcards/createAndEditCard.html', context)
 
 def editDeck(request, deck_id):
     '''
