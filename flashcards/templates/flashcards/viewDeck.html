@@ -19,9 +19,13 @@
 
 <div class="notecard">
   <div class="notecard-nav text-centered">
-    <a href="">Prev</a>
+    {% if card_obj.has_prev_card %}
+      <a href="{% url 'flashcards:viewDeck' deck_obj.id %}?card={{card_obj.get_prev_card.id}}">Prev</a>
+    {% endif %}
     <a href="">Random</a>
-    <a href="">Next</a>
+    {% if card_obj.has_next_card %}
+      <a href="{% url 'flashcards:viewDeck' deck_obj.id %}?card={{card_obj.get_next_card.id}}">Next</a>
+    {% endif %}
   </div>
   <div class="notecard-front">
     <p class='text-centered'>Front</p>
