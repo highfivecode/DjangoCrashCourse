@@ -1,5 +1,5 @@
 from django.forms import ModelForm
-from .models import Deck
+from .models import Deck, Card
 
 class DeckForm(ModelForm):
     '''
@@ -8,3 +8,11 @@ class DeckForm(ModelForm):
     class Meta:
         model = Deck
         fields = ['title', 'description', 'is_active']
+
+class CardForm(ModelForm):
+    '''
+    Form mapping to the card model
+    '''
+    class Meta:
+        model = Card
+        fields = ['parentDeck', 'front', 'back']

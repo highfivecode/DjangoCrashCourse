@@ -3,7 +3,7 @@ from django.shortcuts import (
         HttpResponseRedirect,
         render,
     )
-from .forms import DeckForm
+from .forms import CardForm, DeckForm
 from .models import Deck
 
 # Create your views here.
@@ -14,6 +14,21 @@ def home(request):
     qs = Deck.objects.order_by('-title').filter(is_active=True)
     context = {'decks': qs}
     return render(request, 'flashcards/home.html', context)
+
+def createCard(request, deck_id):
+    '''
+    Used to create a card for the deck with the given deck_id
+    '''
+    deck_obj = get_object_or_404(Deck, id=deck_id)
+    if request.method == 'POST':
+        form = CardForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect('/flashcards')
+    else:
+        form = CardForm(initial={'parentDeck':deck_obj})
+    context = {'form': form}
+    return render(request, 'flashcards/createAndEditCard.html', context)
 
 def createDeck(request):
     '''

@@ -7,7 +7,7 @@
   </div>
   <div class="deck-header-actions">
     <a href="{% url 'flashcards:editDeck' deck_obj.id %}">edit deck</a><br>
-    add card<br>
+    <a href="{% url 'flashcards:createCard' deck_obj.id %}">add card</a><br>
   </div>
 </div>
 
