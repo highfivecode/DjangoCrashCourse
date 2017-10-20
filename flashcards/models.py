@@ -1,4 +1,5 @@
 from django.db import models
+import random
 
 # Create your models here.
 class Deck(models.Model):
@@ -16,6 +17,14 @@ class Deck(models.Model):
         '''
         return self.card_set.count()
     get_number_of_cards.short_description = 'Card Count'
+
+    def get_random_card(self):
+        '''
+        Returns random card from deckset
+        '''
+        random_number = random.randint(0, self.card_set.count() - 1)
+        random_card = self.card_set.all()[random_number]
+        return random_card
 
 class Card(models.Model):
     parentDeck = models.ForeignKey(Deck, on_delete=models.CASCADE)

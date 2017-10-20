@@ -22,7 +22,9 @@
     {% if card_obj.has_prev_card %}
       <a href="{% url 'flashcards:viewDeck' deck_obj.id %}?card={{card_obj.get_prev_card.id}}">Prev</a>
     {% endif %}
-    <a href="">Random</a>
+    {% if deck_obj.get_number_of_cards > 1 %}
+    <a href="{% url 'flashcards:viewDeck' deck_obj.id %}?card={{deck_obj.get_random_card.id}}">Random</a>
+    {% endif%}
     {% if card_obj.has_next_card %}
       <a href="{% url 'flashcards:viewDeck' deck_obj.id %}?card={{card_obj.get_next_card.id}}">Next</a>
     {% endif %}

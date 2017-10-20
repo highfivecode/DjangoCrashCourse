@@ -74,3 +74,11 @@ class CardTestCase(TestCase):
         self.assertIsNone(self.card3.get_next_card())
         self.assertEqual(self.card3, self.card2.get_next_card())
         self.assertEqual(self.card2, self.card1.get_next_card())
+
+    def test_get_random_card_from_deck(self):
+        '''
+        Calls deck.get_random_card 100 times and ensures
+        it returns a valid card each time.
+        '''
+        for _ in range(100):
+            self.assertIn(self.deck.get_random_card(), [self.card1, self.card2, self.card3])
