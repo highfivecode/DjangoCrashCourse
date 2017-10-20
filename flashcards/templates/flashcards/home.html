@@ -8,7 +8,7 @@
 
       {% if decks %}
           {% for deck in decks %}
-            <a class='my-button' href="{% url 'flashcards:editDeck' deck.id %}">{{deck.title}}</a>
+            <a class='my-button' href="{% url 'flashcards:viewDeck' deck.id %}">{{deck.title}}</a>
           {% endfor %}
       {% else %}
         <h1>No Decks Found! Contact an Admin!</h1>

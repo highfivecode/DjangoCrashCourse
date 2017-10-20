@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{deck_obj}}</h1>
+<hr>
+{% if card_obj %}
+  <p>{{card_obj.front}}</p>
+  <p>{{card_obj.back}}</p>
+{% else %}
+  <p>No card found. Have you tried to add one?</p>
+{% endif %}
+
+{% endblock %}

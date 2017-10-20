@@ -32,6 +32,14 @@ def createDeck(request):
     context = {'form': form}
     return render(request, 'flashcards/createAndEditDeck.html', context)
 
+def deleteDeck(request, deck_id):
+    '''
+    Deletes the deck whose id == deck_id
+    '''
+    deck_obj = get_object_or_404(Deck, id=deck_id)
+    deck_obj.delete()
+    return HttpResponseRedirect('/flashcards')
+
 def editDeck(request, deck_id):
     '''
     Renders the form to edit information about a deck object
@@ -50,10 +58,16 @@ def editDeck(request, deck_id):
     context = {'form': form, 'edit_mode':True, 'deck_obj':deck_obj}
     return render(request, 'flashcards/createAndEditDeck.html', context)
 
-def deleteDeck(request, deck_id):
+def viewDeck(request, deck_id):
     '''
-    Deletes the deck whose id == deck_id
+    Gets deck from the database.
+    Return first card in deck unless card_id is specified in url
     '''
     deck_obj = get_object_or_404(Deck, id=deck_id)
-    deck_obj.delete()
-    return HttpResponseRedirect('/flashcards')
+    card_list = deck_obj.card_set.all()
+    card_obj = card_list.first()
+    print(deck_obj)
+    print(card_list)
+    print(card_obj)
+    context = {'deck_obj': deck_obj, 'card_obj':card_obj}
+    return render(request, 'flashcards/viewDeck.html', context)
