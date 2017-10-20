@@ -38,3 +38,21 @@ class CardTestCase(TestCase):
         self.assertIsInstance(self.card1, Card)
         self.assertIsInstance(self.card2, Card)
         self.assertIsInstance(self.card3, Card)
+
+    def test_card_has_prev(self):
+        '''
+        The first card does not have a prev card.
+        All other cards do.
+        '''
+        self.assertFalse(self.card1.has_prev_card())
+        self.assertTrue(self.card2.has_prev_card())
+        self.assertTrue(self.card3.has_prev_card())
+
+    def test_card_has_next(self):
+        '''
+        The last card does not have a next card.
+        All other cards do.
+        '''
+        self.assertTrue(self.card1.has_next_card())
+        self.assertTrue(self.card2.has_next_card())
+        self.assertFalse(self.card3.has_next_card())
