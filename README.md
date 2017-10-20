@@ -26,3 +26,4 @@ A crash course in Django
 ### [DCC 25 - Viewing The Flashcards](https://github.com/highfivecode/DjangoCrashCourse/tree/0836fe982840662341e41319f96cd4ee34f574e1)  
 ### [DCC 26 - Styling The View Deck Page](https://github.com/highfivecode/DjangoCrashCourse/tree/fc2badf25de67ac9c880c7f864fc5dc3ddfda337) 
 ### [DCC 27 - Adding Cards To Decks](https://github.com/highfivecode/DjangoCrashCourse/tree/99aeac197250ce4bc3264b945b15155b51d0377d)  
+### [DCC 28 - Editing Cards](https://github.com/highfivecode/DjangoCrashCourse/tree/4a100b729682c07bcfbc99b979d6a6de5b2f67d8)  
