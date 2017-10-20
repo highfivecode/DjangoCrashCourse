@@ -32,4 +32,4 @@ A crash course in Django
 ### [DCC 31 - Automated Testing Part 1](https://github.com/highfivecode/DjangoCrashCourse/tree/af2f3117a5c7d4e492a1096481bcb5fc8533b28d)    
 ### [DCC 32 - Automated Testing Part 2](https://github.com/highfivecode/DjangoCrashCourse/tree/9ce40dadd4aaa50ac8fc878dd660347f596410da)  
 ### [DCC 33 - Automated Testing Part 3](https://github.com/highfivecode/DjangoCrashCourse/tree/8d4074eecd4aa706c88b38297ddd3cbbc75c7174)  
-### [DCC 34 - Automted Testing Part 4](https://github.com/highfivecode/DjangoCrashCourse/tree/5ecd9fd68aa48d50b68e44c7d31fbc21abef394f)  
+### [DCC 34 - Automated Testing Part 4](https://github.com/highfivecode/DjangoCrashCourse/tree/5ecd9fd68aa48d50b68e44c7d31fbc21abef394f)  
