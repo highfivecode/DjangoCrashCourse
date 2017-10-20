@@ -27,3 +27,4 @@ A crash course in Django
 ### [DCC 26 - Styling The View Deck Page](https://github.com/highfivecode/DjangoCrashCourse/tree/fc2badf25de67ac9c880c7f864fc5dc3ddfda337) 
 ### [DCC 27 - Adding Cards To Decks](https://github.com/highfivecode/DjangoCrashCourse/tree/99aeac197250ce4bc3264b945b15155b51d0377d)  
 ### [DCC 28 - Editing Cards](https://github.com/highfivecode/DjangoCrashCourse/tree/4a100b729682c07bcfbc99b979d6a6de5b2f67d8)  
+### [DCC 29 - Deleting Cards](https://github.com/highfivecode/DjangoCrashCourse/tree/193ea3afd19a262115f6c29fbc5093b78600a159)  
