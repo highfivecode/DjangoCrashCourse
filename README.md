@@ -23,3 +23,4 @@ A crash course in Django
 ### [DCC 22 - Dynamic Url Parameters and Editing Model Forms](https://github.com/highfivecode/DjangoCrashCourse/tree/3cd043c25753793af2ed046f27dd42d0582f49a4)  
 ### [DCC 23 - Deleting Objects Using A View](https://github.com/highfivecode/DjangoCrashCourse/tree/5d74691b302ddb49df61eb46b189866863ed2e40)  
 ### [DCC 24 - CSS Housekeeping](https://github.com/highfivecode/DjangoCrashCourse/tree/c04494667b4fb9b90b3cba3a3cc1a4ece294f962)  
+### [DCC 25 - Viewing The Flashcards](https://github.com/highfivecode/DjangoCrashCourse/tree/0836fe982840662341e41319f96cd4ee34f574e1)  
