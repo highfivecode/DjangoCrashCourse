@@ -9,7 +9,7 @@
     <a href="{% url 'flashcards:editDeck' deck_obj.id %}">edit deck</a><br>
     <a href="{% url 'flashcards:createCard' deck_obj.id %}">add card</a><br>
     {% if card_obj %}
-      <a href="{% url 'flashcards:editCard' deck_obj.id card_obj.id %}">edit current card</a><br> 
+      <a href="{% url 'flashcards:editCard' card_obj.id %}">edit current card</a><br> 
     {% endif %}
   </div>
 </div>
