@@ -3,6 +3,7 @@ from django.shortcuts import (
         HttpResponseRedirect,
         render,
     )
+from django.urls import reverse
 from .forms import CardForm, DeckForm
 from .models import Card, Deck
 
@@ -24,7 +25,7 @@ def createCard(request, deck_id):
         form = CardForm(request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect('/flashcards')
+            return HttpResponseRedirect(reverse('flashcards:viewDeck', args=[deck_obj.id]))
     else:
         form = CardForm(initial={'parentDeck':deck_obj})
     context = {'form': form}
@@ -41,7 +42,7 @@ def createDeck(request):
         if form.is_valid():
             #save the form, this saves the object to the database
             form.save()
-            return HttpResponseRedirect('/flashcards')
+            return HttpResponseRedirect(reverse('flashcards:home'))
     else:
         form = DeckForm()
     context = {'form': form}
@@ -53,7 +54,7 @@ def deleteCard(request, card_id):
     '''
     card_obj = get_object_or_404(Card, id=card_id)
     card_obj.delete()
-    return HttpResponseRedirect('/flashcards')
+    return HttpResponseRedirect(reverse('flashcards:home'))
 
 def deleteDeck(request, deck_id):
     '''
@@ -61,7 +62,7 @@ def deleteDeck(request, deck_id):
     '''
     deck_obj = get_object_or_404(Deck, id=deck_id)
     deck_obj.delete()
-    return HttpResponseRedirect('/flashcards')
+    return HttpResponseRedirect(reverse('flashcards:home'))
 
 def editCard(request, card_id):
     '''
@@ -72,7 +73,7 @@ def editCard(request, card_id):
         form = CardForm(request.POST, instance=card_obj)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect('/flashcards')
+            return HttpResponseRedirect(reverse('flashcards:home'))
     else:
         form = CardForm(instance=card_obj)
     context = {'form':form, 'edit_mode':True, 'card_obj':card_obj}
@@ -90,7 +91,7 @@ def editDeck(request, deck_id):
         if form.is_valid():
             #save the form, this saves the object to the database
             form.save()
-            return HttpResponseRedirect('/flashcards')
+            return HttpResponseRedirect(reverse('flashcards:home'))
     else:
         form = DeckForm(instance=deck_obj)
     context = {'form': form, 'edit_mode':True, 'deck_obj':deck_obj}
