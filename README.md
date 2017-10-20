@@ -31,3 +31,4 @@ A crash course in Django
 ### [DCC 30 - Reversing Urls In Views](https://github.com/highfivecode/DjangoCrashCourse/tree/6dce3799d2fd21255e4cdb49fceff68cf7651ded)   
 ### [DCC 31 - Automated Testing Part 1](https://github.com/highfivecode/DjangoCrashCourse/tree/af2f3117a5c7d4e492a1096481bcb5fc8533b28d)    
 ### [DCC 32 - Automated Testing Part 2](https://github.com/highfivecode/DjangoCrashCourse/tree/9ce40dadd4aaa50ac8fc878dd660347f596410da)  
+### [DCC 33 - Automated Testing Part 3](https://github.com/highfivecode/DjangoCrashCourse/tree/be950a718e44492164d6343eac7eb98e4c293850)  
