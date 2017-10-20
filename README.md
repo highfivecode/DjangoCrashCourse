@@ -35,3 +35,4 @@ A crash course in Django
 ### [DCC 34 - Automated Testing Part 4](https://github.com/highfivecode/DjangoCrashCourse/tree/5ecd9fd68aa48d50b68e44c7d31fbc21abef394f)  
 ### [DCC 35 - Styling The View Deck Page 2](https://github.com/highfivecode/DjangoCrashCourse/tree/0fbbfb261b6d3affbaecd9d87ed1a8a086e4eb19)  
 ### [DCC 36 - Using URL Query Strings](https://github.com/highfivecode/DjangoCrashCourse/tree/f3eb581f4bfe0187f69c4782b28f3baed014b9c1)  
+### [DCC 36 - Get Random Card](https://github.com/highfivecode/DjangoCrashCourse/tree/8c4141c86c43bd345c255bf46a9a24812bf003b3)  
