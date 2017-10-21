@@ -16,19 +16,19 @@
 <hr>
 
 {% if card_obj %}
+<div class="notecard-nav text-centered">
+  {% if card_obj.has_prev_card %}
+    <a href="{% url 'flashcards:viewDeck' deck_obj.id %}?card={{card_obj.get_prev_card.id}}">Prev</a>
+  {% endif %}
+  {% if deck_obj.get_number_of_cards > 1 %}
+  <a href="{% url 'flashcards:viewDeck' deck_obj.id %}?card={{deck_obj.get_random_card.id}}">Random</a>
+  {% endif%}
+  {% if card_obj.has_next_card %}
+    <a href="{% url 'flashcards:viewDeck' deck_obj.id %}?card={{card_obj.get_next_card.id}}">Next</a>
+  {% endif %}
+</div>
 
 <div class="notecard">
-  <div class="notecard-nav text-centered">
-    {% if card_obj.has_prev_card %}
-      <a href="{% url 'flashcards:viewDeck' deck_obj.id %}?card={{card_obj.get_prev_card.id}}">Prev</a>
-    {% endif %}
-    {% if deck_obj.get_number_of_cards > 1 %}
-    <a href="{% url 'flashcards:viewDeck' deck_obj.id %}?card={{deck_obj.get_random_card.id}}">Random</a>
-    {% endif%}
-    {% if card_obj.has_next_card %}
-      <a href="{% url 'flashcards:viewDeck' deck_obj.id %}?card={{card_obj.get_next_card.id}}">Next</a>
-    {% endif %}
-  </div>
   <div class="notecard-front">
     <p class='text-centered'>Front</p>
     <p>{{card_obj.front}}</p>
@@ -38,6 +38,29 @@
     <p>{{card_obj.back}}</p>
   </div>
 </div>
+
+<script type='text/javascript'>
+  var front = document.querySelector('.notecard-front');
+  var back = document.querySelector('.notecard-back');
+  var card = document.querySelector('.notecard');
+
+  card.onclick = function(){
+    flipCard();
+  }
+
+  function flipCard(){
+    if (front.style.display === 'none'){
+      front.style.display = 'block';
+      back.style.display = 'none';
+    } else {
+      front.style.display = 'none';
+      back.style.display = 'block';
+    }
+
+  }
+
+</script>
+
 
 {% else %}
   <p>No card found. Have you tried to add one?</p>
