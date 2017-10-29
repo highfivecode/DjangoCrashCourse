@@ -1,5 +1,12 @@
+<img src="https://highfivecode.com/static/img/logo.png" height="300px">
+
 # DjangoCrashCourse
-A crash course in Django
+
+A free course in the principles of Django, a web framework powered by Django. The videos are listed on the HighFiveCode
+youtube channel [here](https://www.youtube.com/channel/UCOmiui0ghT5OoVdD1wi4mFA). 
+
+At the end of each video we push the changes to this repo. The links below will take you the repository as it exists in that
+moment of time. You can use this as a quick reference or as a backup in case you have an error in your code and can't quite figure it out.  
 
 ### [DCC 3 - First Home Page](https://github.com/highfivecode/DjangoCrashCourse/tree/44c48ebf2226a4c28c8cdb277a4886b96524efda)
 ### [DCC 4 - First Template](https://github.com/highfivecode/DjangoCrashCourse/tree/3c9c3e88a90357218e1198ebc0e4a40ca0123ed9)  
