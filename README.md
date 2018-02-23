@@ -1,4 +1,4 @@
-<img src="https://highfivecode.com/static/img/logo.png" height="300px">
+<img src="https://d21gpk270hggkn.cloudfront.net/static/images/logo.png" height="300px">
 
 # DjangoCrashCourse
 
